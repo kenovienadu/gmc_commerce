@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Website</title>
+
+  <!-- Tailwindcss -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="bg-black text-white flex items-center justify-between pl-4 sticky top-0 md:hidden" >
+    <div class="font-medium text-xl">L O G O</div>
+
+    <button class="hamburger text-2xl px-8 py-8 hover:bg-gray-100 hover:text-black cursor-pointer">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <div class="wrapper flex mx-auto gap-[20px]">
+    <!-- Menu on Left -->
+    <section class="menu menu-close fixed md:relative md:inline-block md:w-1/4">
+      <nav class="px-4 pt-4 bg-white w-[250px] md:w-full">
+        <div class="flex justify-between">
+          <div class="font-medium text-xl">L O G O</div>
+          <button class="menu-close-btn md:hidden ">&times;</button>
+        </div>
+        <section class="mt-[60px]">
+          <a class="text-gray-600 text-sm">Shirts</a>
+          <a class="text-gray-600 text-sm">Dresses</a>
+          <a class="text-sm font-medium">
+            <span class="pr-1">Jeans</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+  
+          <div class="pl-5 mb-3">
+            <a class="bg-gray-100 text-sm pl-3 py-2">
+              <i class="fa-solid fa-caret-right"></i>
+              <span class="pl-4">Skinny</span>
+            </a>
+            <a class="text-gray-500 text-sm">Relaxed</a>
+            <a class="text-gray-500 text-sm">Bootcut</a>
+            <a class="text-gray-500 text-sm">Straight</a>
+          </div>
+  
+          <a class="text-gray-500 text-sm">Jackets</a>
+          <a class="text-gray-500 text-sm">Gymwear</a>
+          <a class="text-gray-500 text-sm">Blazers</a>
+          <a class="text-gray-500 text-sm">Shoes</a>
+        </section>
+  
+        <section class="mt-[100px] text-sm font-medium">
+          <a>Contact</a>
+          <a>Newsletter</a>
+          <a>Subscribe</a>
+        </section>
+      </nav>
+    </section>
+
+    <!-- Content on Right -->
+    <main class="md:w-3/4 pt-4 content">
+      <div class="px-4 md:px-0 flex justify-between items-center text-2xl">
+        <span>Jeans</span>
+        <div class="inline-flex gap-4">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <!-- Hero -->
+      <div class="mt-6 relative hero">
+        <img src="https://www.w3schools.com/w3images/jeans.jpg" alt="">
+        <div class="py-[50px] px-[25px] hero-content text-white">
+          <h3 class="text-4xl mb-3 font-medium">New arrivals</h3>
+          <div class="text-2xl mb-3 uppercase font-medium">Collection 2016</div>
+
+          <button class="bg-black text-white uppercase p-3 font-medium text-sm rounded">
+            Shop Now
+          </button>
+        </div>
+      </div>
+
+      <div class="py-2 text-gray-600 text-sm px-4 md:px-0">
+        8 items
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 products px-4 md:px-0">
+        <!-- Grid item start -->
+        <div>
+          <img src="https://plus.unsplash.com/premium_photo-1698339571239-8c65d17adab7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGZhc2hpb24lMjB0cm91c2VyfGVufDB8fDB8fHww" alt="">
+          <div>
+            <p>Ripped Skinny Jeans</p>
+            <p>$24.99</p>
+          </div>
+        </div>
+        <!-- Grid item End -->
+
+        <!-- Grid item start -->
+        <div>
+          <img src="https://plus.unsplash.com/premium_photo-1707816501019-8f24a3c9bac4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGZhc2hpb24lMjB0cm91c2VyfGVufDB8fDB8fHww" alt="">
+          <div>
+            <p>Ripped Skinny Jeans</p>
+            <p>$24.99</p>
+          </div>
+        </div>
+        <!-- Grid item End -->
+
+        <!-- Grid item start -->
+        <div>
+          <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZhc2hpb24lMjB0cm91c2VyfGVufDB8fDB8fHww" alt="">
+          <div>
+            <p>Ripped Skinny Jeans</p>
+            <p>$24.99</p>
+          </div>
+        </div>
+        <!-- Grid item End -->
+
+        <!-- Grid item start -->
+        <div>
+          <img src="https://images.unsplash.com/photo-1616150638538-ffb0679a3fc4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZhc2hpb24lMjB0cm91c2VyfGVufDB8fDB8fHww" alt="">
+          <div>
+            <p>Ripped Skinny Jeans</p>
+            <p>$24.99</p>
+          </div>
+        </div>
+        <!-- Grid item End -->
+
+        <!-- Grid item start -->
+        <div>
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+          <div>
+            <p>Ripped Skinny Jeans</p>
+            <p>$24.99</p>
+          </div>
+        </div>
+        <!-- Grid item End -->
+
+        <!-- Grid item start -->
+        <div>
+          <img src="https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZhc2hpb258ZW58MHx8MHx8fDA%3D" alt="">
+          <div>
+            <p>Ripped Skinny Jeans</p>
+            <p>$24.99</p>
+          </div>
+        </div>
+        <!-- Grid item End -->
+
+        <!-- Grid item start -->
+        <div>
+          <img src="https://plus.unsplash.com/premium_photo-1674828600712-7d0caab39109?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmFzaGlvbiUyMHRyb3VzZXJ8ZW58MHx8MHx8fDA%3D" alt="">
+          <div>
+            <p>Ripped Skinny Jeans</p>
+            <p>$24.99</p>
+          </div>
+        </div>
+        <!-- Grid item End -->
+
+        <!-- Grid item start -->
+        <div>
+          <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFzaGlvbiUyMHRyb3VzZXJ8ZW58MHx8MHx8fDA%3D" alt="">
+          <div>
+            <p>Ripped Skinny Jeans</p>
+            <p>$24.99</p>
+          </div>
+        </div>
+        <!-- Grid item End -->
+
+      </div>
+
+      <div class="bg-black text-white py-8 px-4 mt-4 flex flex-col gap-2">
+        <div class="text-2xl">Subscribe</div>
+        <div class="text-xs">To get special offers and VIP treatment:</div>
+        <input type="text" class="block w-full p-2 text-sm" placeholder="Enter Email">
+        <div class="">
+          <button class="bg-red-600 p-3 text-xs">Subscribe</button>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer bg-gray-100 py-8 flex px-4 justify-between">
+
+        <!-- Contact Form -->
+        <div>
+          <div class="text-center">
+            <h4 class="mb-2">Contact</h4>
+            <div class="text-xs">Questions? Go Ahead.</div>
+          </div>
+
+          <div class="flex flex-col gap-2 mt-4">
+            <input type="text" class="block w-full p-2 text-sm md:w-[270px]" placeholder="Name">
+            <input type="text" class="block w-full p-2 text-sm md:w-[270px]" placeholder="Email">
+            <input type="text" class="block w-full p-2 text-sm md:w-[270px]" placeholder="Subject">
+            <input type="text" class="block w-full p-2 text-sm md:w-[270px]" placeholder="Message">
+            <button class="bg-black text-white p-3 text-xs">Send</button>
+          </div>
+        </div>
+
+        <!-- Page Links -->
+        <div class="text-center">
+          <div class="mb-4">About</div>
+
+          <div class="w-[100px]">
+            <a>About Us</a>
+            <a>We're Hiring</a>
+            <a>Support</a>
+            <a>Find Store</a>
+            <a>Shipment</a>
+            <a>Payment</a>
+            <a>Gift Card</a>
+            <a>Return</a>
+            <a>Help</a>
+          </div>
+        </div>
+
+        <div class="md:w-[250px]">
+          <div class="mb-4">Store</div>
+
+          <div>
+            <div class="text-xs mb-2 flex items-center">
+              <div class="w-[20px]">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <span>
+                Company Name
+              </span>
+            </div>
+  
+            <div class="text-xs mb-2 flex items-center">
+              <div class="w-[20px]">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <span>
+                0044123123
+              </span>
+            </div>
+  
+            <div class="text-xs mb-2 flex items-center">
+              <div class="w-[20px]">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <span>
+                ex@gmail.com
+              </span>
+            </div>
+          </div>
+
+          <div class="mb-4 mt-4">We accept</div>
+
+          <div>  
+            <div class="text-xs mb-2 flex items-center">
+              <div class="w-[20px]">
+                <i class="fa-solid fa-credit-card"></i>
+              </div>
+              <span>
+                Amex
+              </span>
+            </div>
+  
+            <div class="text-xs mb-2 flex items-center">
+              <div class="w-[20px]">
+                <i class="fa-regular fa-credit-card"></i>
+              </div>
+              <span>
+                Credit Card
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-black text-white text-center py-6 text-sm">
+        Powered by <a class="underline" href="http://w3.css">w3.css</a>
+      </div>
+    </main>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

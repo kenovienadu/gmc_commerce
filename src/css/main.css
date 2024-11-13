@@ -1,0 +1,74 @@
+body {
+  font-family: "Montserrat", sans-serif
+}
+
+nav a {
+  display: block;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.813);
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+nav {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+header {
+  z-index: 5;
+}
+
+.wrapper {
+  max-width: 1150px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.products img {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer input {
+  border: 1px solid lightgray;
+  outline: none;
+  height: 30px;
+  font-size: 12px;
+}
+
+.footer a {
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+.menu-close {
+  display: none;
+}
